@@ -1,0 +1,75 @@
+#calculator{
+  border-radius: 10px;
+  width: 35%;
+  height: 500px;
+  padding: 5px;
+  margin: 150px auto;
+  background-color: #00FFFF;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+    "display display display display"
+    "clear clear divide multiply "
+    "seven eight nine subtract"
+    "four five six add"
+    "one two three equals"
+    "zero zero decimal equals";
+}
+
+#display{
+  grid-area: display;
+  background-color: #FF4500;
+  text-align: right;
+  padding: 10px;
+  margin-bottom: -5px;
+  font-family: Orbitron;
+  border-radius: 10px;
+}
+
+h3{
+  display: inline-block;
+  word-break: break-word;
+  min-height: 20px;
+  height: auto;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+h2{
+  width: 100%;
+  display: inline-block;
+  word-break: break-word;
+  height: auto;
+  min-height: 35px;
+  word-wrap: break-word;
+}
+
+button{
+  border-radius: 8px;
+  border: 1px solid black;
+  background-color: #A9A9A9;
+  color: white;
+  font-family: 'Grandstander', cursive;#B22222;
+  font-size: 29px;
+}
+
+button:hover{
+  border-color: white;
+  color: black;
+}
+
+#clear{
+  background-color: #696969;
+}
+#clear:hover{
+  color: yellow;
+}
+
+#divide, #multiply, #subtract, #add, #equals{
+  background-color: yellow;
+  color: #FF4500;
+}
+#divide:hover, #multiply:hover, #subtract:hover, #add:hover, #equals:hover{
+  color: #696969;
+}
